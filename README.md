@@ -68,3 +68,7 @@ Run the query to collect data for the /near endpoint.
 `:param: (int) lat, lon, num`
 `:return: list of dicts`
 
+#### 3. Static code analysis results
+
+The code has passed static code analisys with pylint (PEP8) with 10/10 score.
+
