@@ -1,7 +1,12 @@
 # Meetup Flask API
 ---
-This service will run a Flask service available at:
-http://127.0.0.1:5000/
+This API implements two endpoints offering informtion extracted from the Meetup Long-Polling RSVP stream service. 
+
+The information is locally stored by a listener (https://github.com/lorenamanita/listener-meetup) on a MariaDB RDMS databse running inside a container for simplicity of use.
+
+This piece of software will run as a microservice, available on port 5000/TCP.
+
+To invoke the different endpoints you must follow the instructionas below.
 
 #### 1. Endpoints
 ---
@@ -10,21 +15,19 @@ The available end points for this API are the following:
 * `/near`
 * `/topCities`
 
-
-
 #### `/near`
 Given latitude, longitude, and N of a given location, this endpoint will return the N closest groups in distance [km]. The default query parameters are lat=0, lon=0, num=1.
 
 Sample query:
 
-http://127.0.0.1:5000/near?lat=43&lon=-5&num=2
+http://<IP>:5000/near?lat=43&lon=-5&num=2
 
 #### `/topCities`
 Given a date in the ISO format (YYYYMMDD) return the top num cities sorted by the number of people attending the event on the given day. The defaulty query parameters are day=<today>, num=1.
 
 Sample query:
 
-http://127.0.0.1:5000/topCities?day=20190708&num=4
+http://<IP>:5000/topCities?day=20190708&num=4
 
 #### 2. Functions
 ---
