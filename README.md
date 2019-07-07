@@ -1,4 +1,4 @@
-# Meetup Flask API
+# Meetup API
 ---
 This API implements two endpoints offering informtion extracted from the Meetup Long-Polling RSVP stream service. 
 
