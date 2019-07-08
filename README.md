@@ -16,7 +16,7 @@ The available end points for this API are the following:
 * `/topCities`
 
 #### `/near`
-Given latitude, longitude, and N of a given location, this endpoint will return the N closest groups in distance [km]. The default query parameters are lat=0, lon=0, num=1.
+Given latitude, longitude of a given location, this endpoint will return N closest groups in distance [km]. The default query parameters are lat=0, lon=0, num=1.
 
 Sample query:
 
