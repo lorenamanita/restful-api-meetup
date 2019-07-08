@@ -20,14 +20,14 @@ Given latitude, longitude, and N of a given location, this endpoint will return 
 
 Sample query:
 
-http://<IP>:5000/near?lat=43&lon=-5&num=2
+`http://<IP>:5000/near?lat=43&lon=-5&num=2`
 
 #### `/topCities`
 Given a date in the ISO format (YYYYMMDD) return the top num cities sorted by the number of people attending the event on the given day. The defaulty query parameters are day=<today>, num=1.
 
 Sample query:
 
-http://<IP>:5000/topCities?day=20190708&num=4
+`http://<IP>:5000/topCities?day=20190708&num=4`
 
 #### 2. Functions
 ---
